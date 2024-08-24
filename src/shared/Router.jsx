@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "../pages/Home";
-import Dex from "../pages/Dex";
+import Home from "../pages/Home/Home";
+import Dex from "../pages/Dex/Dex";
 import Layout from "./Layout";
-import Dashboard from "../components/Dashboard";
+import Dashboard from "../components/Dashboard/Dashboard";
 
 const Router = () => {
   return (
