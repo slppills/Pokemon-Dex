@@ -6,6 +6,8 @@ export const Wrapper = styled.div`
   justify-content: center;
   gap: 40px;
   height: 100%;
+  width: 80%;
+  margin: 0 auto;
 `;
 
 export const StartDexBtn = styled.button`
