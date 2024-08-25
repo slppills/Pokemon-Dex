@@ -1,16 +1,14 @@
+import { useContext } from "react";
 import PokemonCard from "../PokemonCard/PokemonCard.jsx";
+import { DexContext } from "../../context/DexContext.js";
 
-const PokemonList = ({ pokemonList, setSelectedPokemon, selectedPokemon, isSelected }) => {
+const PokemonList = ({ isSelected }) => {
+  const { MOCK_DATA } = useContext(DexContext);
+
   return (
     <>
-      {pokemonList.map((pokemon) => (
-        <PokemonCard
-          pokemon={pokemon}
-          setSelectedPokemon={setSelectedPokemon}
-          selectedPokemon={selectedPokemon}
-          key={pokemon.id}
-          isSelected={isSelected}
-        />
+      {MOCK_DATA.map((pokemon) => (
+        <PokemonCard pokemon={pokemon} key={pokemon.id} isSelected={isSelected} />
       ))}
     </>
   );
