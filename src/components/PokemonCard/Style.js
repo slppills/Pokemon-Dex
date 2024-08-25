@@ -29,14 +29,14 @@ export const PokeNumber = styled.p`
 `;
 
 export const AddRemoveButton = styled.button`
-  background-color: #ff0000;
+  background-color: ${(props) => props.$backgroundcolor};
   padding: 7px 15px;
   color: white;
   font-weight: 500;
   font-size: 0.75rem;
   border-radius: 5px;
-  transition: background-color 0.1s;
+  transition: background-color 0.2s;
   &:hover {
-    background-color: #cc0000;
+    background-color: ${(props) => props.$hoverbackgroundcolor};
   }
 `;
