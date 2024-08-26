@@ -8,7 +8,7 @@ import store from "../redux/config/configStore";
 
 const Router = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Pokemon-Dex/">
       <Provider store={store}>
         <Layout>
           <Routes>
