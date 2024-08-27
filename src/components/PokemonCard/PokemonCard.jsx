@@ -24,7 +24,6 @@ const PokemonCard = ({ pokemon, isSelected }) => {
           $backgroundcolor="#ff0000"
           $hoverbackgroundcolor="#cc0000"
           onClick={(e) => {
-            console.log(e.target.id);
             toast.info(`${pokemon.korean_name}, 수고했어! 들어가서 편히 쉬어.`);
             dispatch(removePokemon(e.target.id));
           }}
