@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home/Home";
 import Dex from "../pages/Dex/Dex";
 import Layout from "./Layout";
-import Dashboard from "../pages/Dashboard/Dashboard";
+import Dashboard from "../pages/PokemonDetail/PokemonDetail";
 import { Provider } from "react-redux";
 import store from "../redux/config/configStore";
 
